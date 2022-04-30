@@ -25,10 +25,10 @@ impl Display for LogTypes {
 /// Prints a green message in the terminal with a `[SUCCESS]` label
 ///
 /// ```
-/// use logr;
-/// use logr::LogTypes;
+/// use log4r;
+/// use log4r::LogTypes;
 /// let s: String = String::from("This is a custom log");
-/// logr::log(s, LogTypes::Custom("\x1b[1;97m\x1b[1;101m".to_string()));
+/// log4r::log(s, LogTypes::Custom("\x1b[1;97m\x1b[1;101m".to_string()));
 /// ```
 pub fn log(str: String, log_type: LogTypes) {
     match log_type {
@@ -44,9 +44,9 @@ pub fn log(str: String, log_type: LogTypes) {
 /// Prints a green message in the terminal with a `[SUCCESS]` label
 ///
 /// ```
-/// use logr;
+/// use log4r;
 /// let s: String = String::from("User has logged in");
-/// logr::success(s);
+/// log4r::success(s);
 /// ```
 pub fn success(s: String) {
     log(s, LogTypes::Success)
@@ -55,9 +55,9 @@ pub fn success(s: String) {
 /// Prints a blue message in the terminal with a `[INFO]` label
 ///
 /// ```
-/// use logr;
+/// use log4r;
 /// let s: String = String::from("User has logged in");
-/// logr::info(s);
+/// log4r::info(s);
 /// ```
 pub fn info(s: String) {
     log(s, LogTypes::Info)
@@ -66,9 +66,9 @@ pub fn info(s: String) {
 /// Prints a yellow message in the terminal with a `[WARNING]` label
 ///
 /// ```
-/// use logr;
+/// use log4r;
 /// let s: String = String::from("User has logged in");
-/// logr::warning(s);
+/// log4r::warning(s);
 /// ```
 pub fn warning(s: String) {
     log(s, LogTypes::Warning)
@@ -77,9 +77,9 @@ pub fn warning(s: String) {
 /// Prints a red message in the terminal with a `[ERROR]` label
 ///
 /// ```
-/// use logr;
+/// use log4r;
 /// let s: String = String::from("User has logged in");
-/// logr::error(s);
+/// log4r::error(s);
 /// ```
 pub fn error(s: String) {
     log(s, LogTypes::Error)
@@ -88,9 +88,9 @@ pub fn error(s: String) {
 /// Prints a white and red message in the terminal with a `[CRITICAL]` label
 ///
 /// ```
-/// use logr;
+/// use log4r;
 /// let s: String = String::from("User has logged in");
-/// logr::critical(s);
+/// log4r::critical(s);
 /// ```
 pub fn critical(s: String) {
     log(s, LogTypes::Critical)

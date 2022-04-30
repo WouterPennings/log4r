@@ -1,5 +1,5 @@
 [package]
-name = "logr"
+name = "log4r"
 authors = ["Wouter Pennings"]
 version = "0.1.0"
 edition = "2021"
