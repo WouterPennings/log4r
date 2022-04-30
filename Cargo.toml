@@ -1,0 +1,11 @@
+[package]
+name = "logr"
+authors = ["Wouter Pennings"]
+version = "0.1.0"
+edition = "2021"
+description = "Stupidly simple logging utils"
+documentation = "https://docs.rs/logr"
+license = "MIT"
+repository = "https://github.com/WouterPennings/logr"
+
+[dependencies]
