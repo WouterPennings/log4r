@@ -1,7 +1,7 @@
 [package]
 name = "log4r"
 authors = ["Wouter Pennings"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Stupidly simple logging utils"
 documentation = "https://docs.rs/log4r"
